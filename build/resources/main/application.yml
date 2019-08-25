@@ -1,0 +1,7 @@
+
+server.port: 9990
+spring.cloud.stream.bindings.input.destination: sensor-topic
+spring.cloud.stream.bindings.input.consumer.useNativeDecoding: true
+spring.cloud.stream.kafka.bindings.input.consumer.configuration.value.deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+spring.cloud.stream.kafka.bindings.input.consumer.configuration.schema.registry.url: http://localhost:8081
+
